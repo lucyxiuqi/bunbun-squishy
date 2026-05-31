@@ -1,4 +1,6 @@
 import React, { useMemo, useState } from "react";
+import webtitle from "./assets/webtitle.png";
+import webhero from "./assets/webhero.png";
 
 const colors = {
   blushCream: "#FDE6E0",
@@ -266,7 +268,11 @@ export default function SlowRisingSquishyShop() {
       <header className="sticky top-0 z-50 border-b border-white/70 bg-[#FFF7F4]/85 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
           <a href="#home" className="flex items-center gap-3">
-            <MiniMark label="BB" className="h-11 w-11 rounded-2xl" />
+            <img
+              src={webtitle}
+              alt="BunBun Squishy logo"
+              className="h-14 w-auto object-contain"
+            />
             <div>
               <p className="text-lg font-black text-[#7A3E1B] cute-font">BunBun Squishy</p>
               <p className="text-xs font-bold text-[#B1682F]">UK & Europe slow rising shop</p>
@@ -329,8 +335,12 @@ export default function SlowRisingSquishyShop() {
                 <p className="text-xs font-black uppercase tracking-wider">Stocked brands</p>
                 <p className="text-lg font-black cute-font">MIDO · 3AN · Lisa</p>
               </div>
-              <div className="rounded-[2.5rem] bg-gradient-to-br from-[#FDE6E0] via-[#FFF7F4] to-[#F9CEA9]/70 p-6">
-                <BunBunLogo />
+              <div className="overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-[#FDE6E0] via-[#FFF7F4] to-[#F9CEA9]/70 p-3">
+                <img 
+                  src={webhero}
+                  alt="BunBun welcoming visitors"
+                  className="aspect-[16/9] w-full rounded-[2rem] object-cover"
+                />
               </div>
             </div>
           </div>
